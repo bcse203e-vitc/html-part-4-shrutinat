@@ -1,0 +1,96 @@
+<html>
+<head>
+  <title>CSS Positioning</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      height: 2000px;
+      background-color: #f9f9f9;
+      padding: 20px;
+    }
+
+    .box {
+      padding: 30px;
+      width: 300px;
+      border-radius: 8px;
+      color: white;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+      line-height: 1.4;
+    }
+
+    .static-box {
+      background-color: #7a98e6;
+      position: static;
+    }
+
+    .fixed-box {
+      background-color: #9c5ab8;
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1000;
+      width: 250px;
+    }
+
+    .relative-box {
+      background-color: #ebab81;
+      position: relative;
+      top: 40px;
+      left: 50px;
+    }
+
+    .wrapper {
+      position: relative;
+      height: 180px;
+      margin-top: 60px;
+      padding: 10px;
+      background-color: #dad7d7;
+      border: 2px dashed #bbb;
+    }
+
+    .absolute-box {
+      background-color: #27ae60;
+      position: absolute;
+      top: 20px;
+      left: 30px;
+      width: 280px;
+    }
+
+    h2 {
+      margin-bottom: 40px;
+      font-size: 24px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>CSS Positioning</h2>
+
+  <div class="box static-box">
+    <strong>Static Positioning</strong><br>
+    It scrolls with the page.
+  </div>
+
+  <div class="box fixed-box">
+    <strong>Fixed Positioning</strong><br>
+    This box stays fixed at the top-right corner, even when you scroll.
+  </div>
+
+  <div class="box relative-box">
+    <strong>Relative Positioning</strong><br>
+    This box is shifted from its normal position.
+  </div>
+
+  <div class="wrapper">
+    <div class="box absolute-box">
+      <strong>Absolute Positioning</strong><br>
+      This box is placed inside its container.
+    </div>
+  </div>
+
+</body>
+</html>

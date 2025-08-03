@@ -1,0 +1,70 @@
+<html>
+<head>
+  <title>Responsive Flexbox Navigation Bar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    /* Navigation Bar Container */
+    nav {
+      background-color: #4a2f51;
+      padding: 15px 0;
+    }
+
+    /* Flexbox Menu */
+    .nav-links {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      flex-wrap: wrap;
+    }
+
+    .nav-links li {
+      margin: 10px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #ecf0f1;
+      font-size: 18px;
+      transition: all 0.3s ease;
+    }
+
+    /* Hover Effects */
+    .nav-links a:hover {
+      color: #f1c40f;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+
+    /* Responsive for Small Screens */
+    @media (max-width: 600px) {
+      .nav-links {
+        flex-direction: column;
+      }
+
+      .nav-links a {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+</body>
+</html>

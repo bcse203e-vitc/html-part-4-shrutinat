@@ -1,0 +1,113 @@
+<html>
+<head>
+  <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    header {
+      background: linear-gradient(to right, #d17dcd, #8a5db7);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 48px;
+      margin: 0;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    header p {
+      font-size: 20px;
+      margin-top: 10px;
+    }
+
+    .section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .gallery img {
+      width: 250px;
+      border-radius: 12px;
+      opacity: 0.8;
+      transition: opacity 0.3s ease;
+    }
+
+    .gallery img:hover {
+      opacity: 1;
+    }
+
+    .cta-buttons {
+      margin-top: 40px;
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .cta-buttons button {
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      background-color: #5e60ce;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      letter-spacing: 1.5px;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .cta-buttons button:hover {
+      background-color: #4a4eea;
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #eee;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Portfolio</h1>
+    <p>Front-End Developer & Designer</p>
+  </header>
+
+  <section class="section">
+    <h2>My Projects</h2>
+    <div class="gallery">
+      <img src="https://www.interviewbit.com/blog/wp-content/uploads/2022/01/Product-Landing-Page-1024x819.png" alt="Project 1">
+      <img src="https://cdn.wedevs.com/uploads/2021/04/Best-project-management-software-for-web-designers.png" alt="Project 2">
+      <img src="https://toggl.com/blog/wp-content/uploads/2020/12/web-design-project-management-software.jpg" alt="Project 3">
+    </div>
+
+    <div class="cta-buttons">
+      <button>Contact Me</button>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025  All rights reserved.
+  </footer>
+
+</body>
+</html>
