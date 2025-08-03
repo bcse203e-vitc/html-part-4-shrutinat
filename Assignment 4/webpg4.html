@@ -1,0 +1,60 @@
+<html>
+<head>
+  <title>CSS Box Model</title>
+  <style>
+    body {
+      background-color: #f2f4f5;
+      padding: 40px;
+      font-family: Arial, sans-serif;
+    }
+
+    .box {
+      background-color: lightyellow; 
+      padding: 20px;                   
+      border: 5px solid steelblue;     
+      margin: 30px;   
+    }
+
+    .box-heading {
+      margin: 0 0 10px 0;
+      font-size: 1.4em;
+      color: darkblue;
+    }
+
+
+    .border-area {
+      background-color: rgb(62, 144, 171);  /* For border */
+      padding: 10px;
+    }
+
+    .padding-area {
+      background-color: rgb(164, 212, 236); /* For padding */
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="margin-area">
+    <div class="border-area">
+      <div class="padding-area">
+        <div class="box">
+          <h2 class="box-heading">Box 1: Standard Box Model</h2>
+          <p>This box demonstrates the basic box model with colored margin, border, and padding areas.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="box" style="border: 8px dashed rgb(181, 72, 181); padding: 40px; margin: 40px;">
+    <h2 class="box-heading">Box 2: Dashed Border & Extra Padding</h2>
+    <p>Increased padding and dashed purple border. Margin creates space outside the border.</p>
+  </div>
+
+  <div class="box" style="border: 6px dotted rgb(176, 51, 51); padding: 10px; margin: 20px;">
+    <h2 class="box-heading">Box 3: Dotted Border & Less Padding</h2>
+    <p>This box has tighter padding and uses a dotted green border for contrast.</p>
+  </div>
+
+</body>
+</html>
